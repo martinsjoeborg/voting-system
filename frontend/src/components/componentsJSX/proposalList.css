@@ -1,0 +1,18 @@
+@font-face {
+    font-family:'bold' ;
+    src: url('../../assets/fonts/Mina/Mina-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family:'reg' ;
+    src: url('../../assets/fonts/Mina/Mina-Regular.ttf') format('truetype');
+  }
+
+li {
+    list-style: none;
+    font-family: "reg";
+    color: white;
+}
+
+.proposalList {
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+@font-face {
+    font-family:'reg' ;
+    src: url('../../assets/fonts/Mina/Mina-Regular.ttf') format('truetype');
+  }
+
+p {
+    font-family: "reg";
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.stake-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.stake-form {
+    font-family: "reg";
+    background-color: transparent;
+    height: 30px;
+    width: 100px;
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.welcome-msg {
+    font-family: "reg";
+    color: #11ddc2;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}

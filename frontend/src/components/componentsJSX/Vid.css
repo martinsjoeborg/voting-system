@@ -1,0 +1,36 @@
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    /* filter: blur(20px); */
+    /* backdrop-filter: blur(10px); */
+    /* transform: scale(1.1);
+    overflow: hidden;  */
+  }
+
+
+  .overlay {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* background-color: rgba(255, 228, 196, 0.221); */
+    backdrop-filter: blur(5px);
+  }
+  .gradient{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: rgba(15, 18, 37, 0.792);
+  }

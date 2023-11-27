@@ -72,6 +72,9 @@ contract VotingSystem {
         }
         return allAccounts;
     }
+    function getContractBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
     function vote(uint256 _idNumber) public stakedAndVoted(msg.sender) cantBeOwner(msg.sender) {
         for(uint256 i; i < proposalArray.length; i++) {
             if(proposalArray[i].proposalID == _idNumber){

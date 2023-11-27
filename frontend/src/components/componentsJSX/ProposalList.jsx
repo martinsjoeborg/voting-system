@@ -48,7 +48,7 @@ const ProposalList = ({ currentAccount }) => {
     }
 
     return (
-        <>  {hasStaked ? <div className="proposalList">{htmlList}</div> : <></>}
+        <>  {hasStaked || currentAccount === "0xEe3fdFf10e5262d36dc293B5989eB3736E389e69" ? <div className="proposalList">{htmlList}</div> : <></>}
         </>
     );
 }

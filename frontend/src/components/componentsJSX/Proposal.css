@@ -1,0 +1,25 @@
+@font-face {
+    font-family:'reg' ;
+    src: url('../../assets/fonts/Mina/Mina-Regular.ttf') format('truetype');
+  }
+
+.proposalForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.textArea {
+    font-family: "reg";
+    background-color: rgba(255, 255, 255, 0.093);
+    height: 200px;
+    width: 300px;
+    resize: none;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-top: 10px;
+}

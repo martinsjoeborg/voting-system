@@ -16,8 +16,8 @@ const Stake = ({ currentAccount }) => {
     }, [currentAccount]);
 
     return (
-        hasStaked ? 
-        <div className="welcome-msg">Vote Below</div> : 
+        hasStaked || currentAccount === "0xEe3fdFf10e5262d36dc293B5989eB3736E389e69" ? 
+        <div className="welcome-msg"></div> : 
         <div className="stake">
             <form onSubmit={(e) => handleAddAccount(e, currentAccount, stakeValue)} className="stake-content">
                 <p>Must stake 0.01 ETH to join.</p>

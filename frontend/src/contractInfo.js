@@ -1,4 +1,4 @@
-export const CONTRACT_ADDRESS = "0x93358879Fadaea48a994218CD7361C3685b74b66";
+export const CONTRACT_ADDRESS = "0x3Fe0B12eD6aCC29A31b2B75B9429c1D912BF0E39";
 
 export const CONTRACT_ABI = [
   {
@@ -96,6 +96,19 @@ export const CONTRACT_ABI = [
         "internalType": "struct VotingSystem.Account[]",
         "name": "",
         "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getContractBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
       }
     ],
     "stateMutability": "view",

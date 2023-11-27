@@ -42,7 +42,14 @@ function App() {
         <div className="section-content">
           <Stake currentAccount={currentAccount}/>
           <div>
-            {ownerIsCurrent() ? <Proposal currentAccount={currentAccount}/> : <></>}
+            {ownerIsCurrent() ?
+              <div>
+                <Proposal currentAccount={currentAccount} />
+                <ProposalList />
+              </div>
+              
+              :
+              <></>}
           </div>
           <ProposalList currentAccount={currentAccount} />
         </div>

@@ -16,3 +16,9 @@ li {
 .proposalList {
     align-items: center;
 }
+
+.voteCount {
+  color: #11ddc2;
+  font-family: "bold";
+  font-size: 1.5rem;
+}

@@ -35,9 +35,6 @@ function App() {
 
       <header className='header'>
         <h1 className='logo'>VOTING SYSTEM</h1>
-
-        {/* <p>Logged in on: {currentAccount}</p> */}
-        {/* <button onClick={() => connectWallet(setCurrentAccount)} className='connect-btn'>Connect wallet</button> */}
         <ConnectBtn setCurrentAccount={setCurrentAccount} currentAccount={currentAccount}/>
       </header>
 

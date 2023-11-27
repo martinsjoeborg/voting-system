@@ -38,7 +38,7 @@ const ProposalList = ({ currentAccount }) => {
     const htmlList = proposalArray.map((prop) => {
         return (<ul key={prop.proposalID}>
             <li>Proposal: {prop.proposalText}</li>
-            <li>Votes: {parseInt(prop.votes)}</li>
+            <li>Votes: <p className="voteCount">{parseInt(prop.votes)}</p></li>
             <button onClick={(e) => handleVote(e, currentAccount, prop.proposalID)}>VOTE</button>
         </ul>);
     })

@@ -4,7 +4,7 @@ import { connectWallet, handleAccountChanged } from './components/walletServices
 import { handleGetAccounts, handleClick, handleAddAccount, handleAddProposal, handleVote } from './components/contractServices.js';
 
 import { useEffect, useState } from 'react';
-import ProposalList from './components/componentsJSX/proposalList.jsx';
+import ProposalList from './components/componentsJSX/ProposalList.jsx';
 import Proposal from './components/componentsJSX/Proposal.jsx';
 import Stake from './components/componentsJSX/Stake.jsx';
 import Vid from './components/componentsJSX/Vid.jsx';
@@ -38,22 +38,21 @@ function App() {
         <ConnectBtn setCurrentAccount={setCurrentAccount} currentAccount={currentAccount}/>
       </header>
 
-      <section className='section'>
-        <div className="section-content">
-          <Stake currentAccount={currentAccount}/>
-          <div>
-            {ownerIsCurrent() ?
-              <div>
-                <Proposal currentAccount={currentAccount} />
-                <ProposalList />
-              </div>
-              
-              :
-              <></>}
+    
+      <Stake currentAccount={currentAccount}/>
+      
+        {ownerIsCurrent() ?
+          <div className='owner-content'>
+            <Proposal currentAccount={currentAccount} />
+            <ProposalList currentAccount={currentAccount} />
           </div>
-          <ProposalList currentAccount={currentAccount} />
-        </div>
-      </section>
+          
+          :
+          <ProposalList currentAccount={currentAccount} />}
+      
+      {/* <ProposalList currentAccount={currentAccount} /> */}
+      
+      
 
     </div>
   )

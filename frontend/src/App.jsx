@@ -9,6 +9,7 @@ import Proposal from './components/componentsJSX/Proposal.jsx';
 import Stake from './components/componentsJSX/Stake.jsx';
 import Vid from './components/componentsJSX/Vid.jsx';
 import ConnectBtn from './components/componentsJSX/ConnectBtn.jsx';
+import Balance from './components/componentsJSX/Balance.jsx';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
 
       <header className='header'>
         <h1 className='logo'>VOTING SYSTEM</h1>
+        <Balance />
         <ConnectBtn setCurrentAccount={setCurrentAccount} currentAccount={currentAccount}/>
       </header>
 

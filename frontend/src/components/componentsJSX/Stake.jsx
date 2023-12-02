@@ -13,7 +13,7 @@ const Stake = ({ currentAccount }) => {
 
     useEffect(() => {
         getAccounts();
-    }, [currentAccount]);
+    });
 
     return (
         hasStaked || currentAccount === "0xEe3fdFf10e5262d36dc293B5989eB3736E389e69" ? 

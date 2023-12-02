@@ -23,7 +23,7 @@ const ProposalList = ({ currentAccount }) => {
     useEffect(() => {
         handleTest();
         getAccounts();
-    }, []);
+    });
 
     const handleTest = async () => {
         const proposalContract = new proposalWeb3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
@@ -53,3 +53,11 @@ const ProposalList = ({ currentAccount }) => {
 }
 
 export default ProposalList;
+
+// useEffect(() => {
+
+// })
+
+// useEffect(() => {
+    
+// }, [])

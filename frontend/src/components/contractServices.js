@@ -31,6 +31,19 @@ export const handleGetAccounts = () => {
     });
 };
 
+export const handleGetBalance = () => {
+  // Return the Promise created by `call`
+  return contract.methods.getContractBalance().call()
+    .then(result => {
+      // console.log(result);
+      return web3.utils.fromWei(result, 'ether');; // This result will be resolved by the Promise
+    })
+    .catch(error => {
+      console.error(error);
+      throw error; // Re-throw the error to be caught by the caller
+    });
+};
+
 
 export const handleClick = () => {
     contract.methods.owner().call()

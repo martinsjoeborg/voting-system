@@ -23,7 +23,11 @@ const Balance = () => {
 
     return (
         <>
-            <div className="balance">Balance: {balance}</div>
+            <div className="balanceContainer">
+                <div className="balance">Balance:</div>
+                <div className="balanceAmount">{balance}</div>
+            </div>
+            
             {/* <button onClick={test}>test</button> */}
         </>
         

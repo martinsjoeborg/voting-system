@@ -42,12 +42,19 @@ const ProposalList = ({ currentAccount }) => {
     })
 
     return (
-        <>  {hasStaked || currentAccount === "0xEe3fdFf10e5262d36dc293B5989eB3736E389e69" ?
-            <div className="proposalContent">
-                <h4 className="proposalTitle">Proposals</h4>
-                <div className="proposalList">{htmlList}</div>
+        <>  {currentAccount === "0xEe3fdFf10e5262d36dc293B5989eB3736E389e69" ?
+            <div className="proposalContentOwner">
+                <h4 className="proposalTitleOwner">Proposals</h4>
+                <div className="proposalListOwner">{htmlList}</div>
             </div>
-             : <></>}
+            : <></>}
+
+            {hasStaked ?
+                <div className="proposalContent">
+                    <h4 className="proposalTitle">Proposals</h4>
+                    <div className="proposalList">{htmlList}</div>
+                </div>
+                : <></>}
         </>
     );
 }

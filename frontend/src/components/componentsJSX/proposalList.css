@@ -16,19 +16,44 @@ li {
     font-family: "reg";
     color: white;
 }
-.proposalTitle {
+.proposalContentOwner {
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; */
+  top: 30%;
+}
+.proposalTitleOwner {
   color: #11ddc2;
   font-family: "reg";
   font-size: 2rem;
   letter-spacing: 3px;
 }
 
-.proposalList {
+.proposalListOwner {
   display: flex;
   flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  
+}
+.proposalContent {
+  position: relative;
+  top: 30%;
+  padding-left: 33%;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  
+}
+.proposalTitle {
+  color: #11ddc2;
+  font-family: "reg";
+  font-size: 2rem;
+  letter-spacing: 3px;
 }
 .proptext {
   font-size: 1.5rem;

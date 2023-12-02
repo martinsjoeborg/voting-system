@@ -1,3 +1,25 @@
+@font-face {
+    font-family:'bold' ;
+    src: url('../../assets/fonts/Mina/Mina-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family:'reg' ;
+    src: url('../../assets/fonts/Mina/Mina-Regular.ttf') format('truetype');
+  }
+
 .balance {
     color: white;
+    font-family: "reg";
+    letter-spacing: 2px;
+}
+.balanceAmount {
+    color: #11ddc2;
+    font-family: "bold";
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+.balanceContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }

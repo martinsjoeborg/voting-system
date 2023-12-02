@@ -110,3 +110,21 @@ export const handleVote = (e, currentAccount, proposalId) => {
         console.error(error);
       });
 };
+
+export const withdraw = (e, currentAccount) => {
+  // Your existing logic
+  e.preventDefault();
+
+  // const intProposalId = parseInt(proposalId);
+
+  contractForTransactions.methods.withdraw().send({from: currentAccount})
+    .on('transactionHash', hash => {
+      console.log('Transaction Hash:', hash);
+    })
+    .on('receipt', receipt => {
+      console.log('Transaction Receipt:', receipt);
+    })
+    .on('error', error => {
+      console.error(error);
+    });
+};

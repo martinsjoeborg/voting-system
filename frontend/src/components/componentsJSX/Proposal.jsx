@@ -1,10 +1,15 @@
 import { handleAddProposal } from "../contractServices";
 import { useState } from "react";
 import "./Proposal.css"
+import { withdraw } from "../contractServices";
 
 const Proposal = ({currentAccount}) => {
 
     const [proposal, setProposal] = useState("");
+
+    // const handleWithdraw = (e, currentAccount) => {
+    //     e
+    // }
 
     return (
         
@@ -12,7 +17,7 @@ const Proposal = ({currentAccount}) => {
                 <p>Proposal</p>
                 <textarea className="textArea" name="" id="" cols="30" rows="10" value={proposal} onChange={ (e) => { setProposal(e.target.value) }}></textarea>
                 <button>ADD</button>
-                <button className="withdraw">Withdraw</button>
+                <button className="withdraw" onClick={(e) => withdraw(e, currentAccount)}>Withdraw</button>
             </form>
         
         
